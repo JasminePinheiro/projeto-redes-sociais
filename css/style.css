@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
-*{
+*{                      /* (*) esse símbolo indica que essas configurações ficará em toda página*/
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
+    height: 100vh;  /*altura da tela inteira*/
+    width: 100vw;   /*largura da tela inteira*/
     background-color: black;
 }
 
@@ -27,7 +27,7 @@ section#telefone {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* o telefone ficará centralizado*/
     height: 627px;
     width: 311px;
     background:url('../imagens/frame-iphone.png') no-repeat;
@@ -37,7 +37,7 @@ iframe#tela{
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 470px;
 }
 
@@ -56,7 +56,7 @@ section#redes_sociais img {
 
 section#redes_sociais img:hover {
     border: 2px solid rgba(255, 255, 255, 0.683);
-    transform: translate(-3px, 3px);
+    transform: translate(-3px, 3px); /*Animação nos botões, quando estiverem selecionados*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.605);
     transition: transform .3s, border 1s;
 }
